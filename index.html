@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in - Who's Watching TV</title>
+    <link href="styles.bundle.css" rel="stylesheet">
+    <!-- added two CDN Links for the stylessheets for the icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+        integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+        crossorigin="anonymous" />
+</head>
+
+<body class="app header-fixed ">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark py-0" style="border-bottom: 5px solid #6FBD95;">
+        <div class="container">
+            <span class="navbar-brand">
+                <img src="logo-darkbg.png" height="40" alt="WWTV logo" />
+            </span>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+                <span class="mx-auto"></span>
+
+
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="app-body">
+        <main class="main">
+            <div class="container mt-3">
+                <div class="mx-auto p-md-3" style="max-width: 420px;">
+
+
+
+                    <div class="card">
+                        <h1 class="card-header">Sign in</h1>
+
+                        <div class="card-body">
+                            <form method="post" action="/account/login?returnurl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DwwtvReportProdServer%26redirect_uri%3Dhttps%253A%252F%252Fnew.whoswatching.tv%252Fsignin-oidc%26response_mode%3Dform_post%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520offline_access%2520role%2520wwtvapi%2520wwtvreport%2520productlog%26state%3DOpenIdConnect.AuthenticationProperties%253DjpWFLLDotxtLR0xBWF4wFXMZC_ZN5qd-Xcm21B9jjUccrGn7eUspldugJINW0YzGPfaPlk4Rye6zn2zClqo-4V8NPQ3h3s3mIyH3u_BdnDvidubrZ2ggbj96XKgsIPVBNL52T7aVU1Br_8C1evRZszD-Xkc2zbAkipa_xWsBufAsnBY5IwyJdS0XCOpjbtRIPCfOrTG3_MVusQFiZdx0S_lDazehU4RYLnoyOsKVYsI%26nonce%3D637724154733036361.Nzg2ZDliMTktZGJiYi00YWM0LWEzZmItMWIwNzVkOTM5YjQ2NmM1NTE3M2QtZGU0YS00N2ZhLThmNGYtNjU3M2JjMmQ0ZmEz">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-addon">
+                                        <i class="icon-user"></i>
+                                    </span>
+                                    <input class="form-control" placeholder="Email address" type="email" data-val="true" data-val-email="The Email field is not a valid e-mail address."
+                                        data-val-required="The Email field is required." id="Email" name="Email" value="" />
+                                </div>
+                                <div class="input-group mb-4">
+                                    <span class="input-group-addon">
+                                        <i class="icon-lock"></i>
+                                    </span>
+                                    <input class="form-control" placeholder="Password" type="password" data-val="true" data-val-required="The Password field is required."
+                                        id="Password" name="Password" />
+                                </div>
+                                <div class="d-flex">
+                                    <nav class="flex-column">
+                                        <a class="d-block mb-1" href="/account/ForgotPassword">Forgot your password?</a>
+                                        <a class="d-block mb-1" href="/account/RegistrationRequest?returnurl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DwwtvReportProdServer%26redirect_uri%3Dhttps%253A%252F%252Fnew.whoswatching.tv%252Fsignin-oidc%26response_mode%3Dform_post%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520offline_access%2520role%2520wwtvapi%2520wwtvreport%2520productlog%26state%3DOpenIdConnect.AuthenticationProperties%253DjpWFLLDotxtLR0xBWF4wFXMZC_ZN5qd-Xcm21B9jjUccrGn7eUspldugJINW0YzGPfaPlk4Rye6zn2zClqo-4V8NPQ3h3s3mIyH3u_BdnDvidubrZ2ggbj96XKgsIPVBNL52T7aVU1Br_8C1evRZszD-Xkc2zbAkipa_xWsBufAsnBY5IwyJdS0XCOpjbtRIPCfOrTG3_MVusQFiZdx0S_lDazehU4RYLnoyOsKVYsI%26nonce%3D637724154733036361.Nzg2ZDliMTktZGJiYi00YWM0LWEzZmItMWIwNzVkOTM5YjQ2NmM1NTE3M2QtZGU0YS00N2ZhLThmNGYtNjU3M2JjMmQ0ZmEz">Request an account</a>
+                                    </nav>
+                                    <span class="mx-auto"></span>
+                                    <div class="flex-column justify-content-end">
+                                        <button type="submit" class="btn btn-lg btn-primary px-3">
+                                            <i class="fa fa-sign-in"></i>
+                                            Sign in
+                                        </button>
+                                    </div>
+                                </div>
+                                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8FDCE-ufg7pCsVBpyBv9QTzfhVSMMFzksqaEUeUFbf-BnMgPxLiA9RnzIV6AgZIaZ-SxUPbmRtD4HotR6q_DYpOuSYa02ufrvhLO2MkiZpmdHrr0MlnXLvlJzrPJHGqFiKRb-k6Js-FuWkTW0Ppk2ds"
+                                />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="app-footer">
+        <p class="m-auto">All Rights Reserved Copyright &copy; 2021 Who's Watching TV.</p>
+    </footer>
+
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="vendor.bundle.js"></script>
+    <!-- CoreUI main scripts -->
+    <script src="app.bundle.js"></script>
+
+
+</body>
+
+</html>
